@@ -86,4 +86,4 @@ gameSocket.broadcastStores(stores, recipients)
 gameSocket.clearStores()
 </script>
 ```
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
