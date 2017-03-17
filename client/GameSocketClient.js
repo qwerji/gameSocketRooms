@@ -3,48 +3,6 @@
 // // socket.io-client interface for RPG store manager
 // // bentswanson.com
 
-// // Example:
-// const eventHandlers = {
-//     serverConnectionHandler: message => {
-//         // message, String, server connection success
-//     },
-//     roomJoinedHandler: roomCode => {
-//         // roomCode, String, joined room's code
-//     },
-//     noRoomHandler: message => {
-//         // message, String, room error message
-//     },
-//     roomMembersHandler: room => {
-//         // room
-//         //    [{
-//         //      id: String,
-//         //      username: String,
-//         //      userType: String
-//         //    }]
-//         // current room members
-//         // Also stored in gameSocket.roomMembers
-//     },
-//     newStoresHandler: stores => {
-//         // stores, [{???}], available stores
-//         // Also stored in gameSocket.stores
-//     },
-//     clearStoresHandler: stores => {
-//         // stores, [], empty array
-//         // Also stored in gameSocket.stores
-//     },
-//     errorHandler: message => {
-//         // message, String, error message
-//     }
-// }
-
-// // Initialize with io (from socket.io), and your event handler functions
-// // Second arg is a debug bool
-// const gameSocket = new GameSocketClient(io, true, eventHandlers)
-
-// // Methods to use:
-// // gameSocket.joinOrCreateRoom(username, userType, roomCode)
-// // gameSocket.broadcastStores(stores, recipients)
-
 // // --------------------------------------------------
 
 function GameSocketClient(socketio, debug, handlers={}) {
@@ -69,7 +27,6 @@ function GameSocketClient(socketio, debug, handlers={}) {
     // Passes out a string of the room code
     socket.on('room_joined', roomCode => {
         if (debug) console.log(`Joined a room. Code: ${roomCode}`)
-        // FOR TESTING VVVVVVV
         if (handlers.roomJoinedHandler) {
             handlers.roomJoinedHandler(roomCode)
         }
