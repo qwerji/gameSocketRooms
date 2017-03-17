@@ -1,0 +1,17 @@
+{
+  "name": "gameSocketRooms",
+  "version": "1.0.0",
+  "description": "A socket.io interface designed for a fantasy RPG project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "keywords": [],
+  "author": "qwerji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
