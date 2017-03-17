@@ -79,7 +79,6 @@ const gameSocket = new GameSocketClient(io, true, eventHandlers)
 ```
 Methods
 ```javascript
-// Methods to use:
 const username = 'Andu',
     userType = 'player', // or 'gm'
     roomCode = 'ADRQB';  // not required for GM user types
