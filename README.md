@@ -32,13 +32,15 @@ gameSocket(io, true)
 ```html
 <script src="/socket.io/socket.io.js"></script>
 <script src="GameSocketClient.js"></script>
-
-<!-- Barebones -->
+```
+Barebones
+```html
 <script>
     const gameSocket = new GameSocketClient(io, true)
 </script>
-
-<!-- With event handlers -->
+```
+With event handlers
+```html
 <script>
 // Example:
 const eventHandlers = {
@@ -84,3 +86,4 @@ gameSocket.broadcastStores(stores, recipients)
 gameSocket.clearStores()
 </script>
 ```
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
