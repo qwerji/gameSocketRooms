@@ -34,15 +34,12 @@ gameSocket(io, true)
 <script src="GameSocketClient.js"></script>
 ```
 Barebones
-```html
-<script>
-    const gameSocket = new GameSocketClient(io, true)
-</script>
+```javascript
+// Console interface only
+const gameSocket = new GameSocketClient(io, true)
 ```
 With event handlers
-```html
-<script>
-// Example:
+```javascript
 const eventHandlers = {
     serverConnectionHandler: message => {
         // message, String, server connection success
@@ -84,6 +81,4 @@ const gameSocket = new GameSocketClient(io, true, eventHandlers)
 gameSocket.joinOrCreateRoom(username, userType, roomCode)
 gameSocket.broadcastStores(stores, recipients)
 gameSocket.clearStores()
-</script>
 ```
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
