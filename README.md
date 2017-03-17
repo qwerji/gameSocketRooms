@@ -76,7 +76,9 @@ const eventHandlers = {
 // Initialize with io (from socket.io), and your event handler functions
 // Second arg is a debug bool
 const gameSocket = new GameSocketClient(io, true, eventHandlers)
-
+```
+Methods
+```javascript
 // Methods to use:
 const username = 'Andu',
     userType = 'player', // or 'gm'
