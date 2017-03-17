@@ -78,7 +78,16 @@ const eventHandlers = {
 const gameSocket = new GameSocketClient(io, true, eventHandlers)
 
 // Methods to use:
+const username = 'Andu',
+    userType = 'player', // or 'gm'
+    roomCode = 'ADRQB';  // not required for GM user types
+
 gameSocket.joinOrCreateRoom(username, userType, roomCode)
+
+const stores = [{ /* Store Object */ }],
+    recipients = ['socket.id']; // Optional, sends to all room members if omitted
+
 gameSocket.broadcastStores(stores, recipients)
+
 gameSocket.clearStores()
 ```
