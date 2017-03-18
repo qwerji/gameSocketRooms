@@ -2,7 +2,7 @@
 A socket.io interface designed for a specific fantasy RPG store management project.
 ## Running the test project
 ```bash
-npm i -S
+npm install
 ```
 ```bash
 npm start
